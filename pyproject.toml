@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "myProject"
+version = "0.0.1"
+
+[project.scripts]
+"main1.py" = "scripts:myscript1"
+"main2.py" = "scripts:myscript2"
+"main3.py" = "scripts:myscript3"
+
+# [tool.setuptools]
+# packages = ["package1", "package2", "scripts"]
+
+[tool.setuptools.packages]
+find = {}  # Scanning implicit namespaces is active by default
+
+
+
+# pip install -e .
