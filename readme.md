@@ -25,7 +25,7 @@ pip install -r requirements.txt
 
 
 
-## Running scripts
+# Running scripts
 ```
 which main3.py
 main3.py
